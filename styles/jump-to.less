@@ -1,0 +1,64 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.jump-to {
+  @min-width: 200px; // min width before it starts scrolling
+
+  -webkit-user-select: none;
+  padding: @component-padding/2;
+  overflow-x: auto;
+
+  .header {
+    padding: @component-padding/4 @component-padding/2;
+    min-width: @min-width;
+  }
+
+  .input-block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: @min-width;
+  }
+  .input-block-item {
+    display: flex;
+    flex: 1;
+    padding: @component-padding / 2;
+  }
+
+  .editor-container {
+    position: relative;
+    atom-text-editor {
+      width: 100%;
+    }
+  }
+
+}
+
+.jump-to-container atom-text-editor {
+  // Styles for regular expression highlighting
+  .syntax--regexp {
+    .syntax--escape {
+      color: @text-color-info;
+    }
+    .syntax--range, .syntax--character-class, .syntax--wildcard {
+      color: @text-color-success;
+    }
+    .syntax--wildcard {
+      font-weight: bold;
+    }
+    .syntax--set {
+      color: inherit;
+    }
+    .syntax--keyword, .syntax--punctuation {
+      color: @text-color-error;
+      font-weight: normal;
+    }
+
+    .syntax--replacement.syntax--variable {
+      color: @text-color-warning;
+    }
+  }
+}

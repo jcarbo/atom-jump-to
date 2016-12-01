@@ -1,0 +1,6 @@
+{
+  "atom-workspace": {
+    "cmd-ctrl-e": "jump-to:jump",
+    "cmd-shift-e": "jump-to:expand"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Jump To",
+          "submenu": [
+            {
+              "label": "Jump to...",
+              "command": "jump-to:jump"
+            },
+            {
+              "label": "Expand to...",
+              "command": "jump-to:expand"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
