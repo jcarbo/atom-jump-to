@@ -1,10 +1,9 @@
 {
   "name": "jump-to",
   "main": "./lib/jump-to",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Move the cursor or expand the current selection to a position in the current line based on a text search.",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": [
       "jump-to:jump",
@@ -16,6 +15,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
